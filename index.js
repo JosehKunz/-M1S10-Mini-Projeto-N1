@@ -34,9 +34,23 @@ app.post('/produtos', validarDadosProduto, (req, res) => {
 });
 
 // 1. Tarefa 2: Listar Produtos
-app.get('/produtos', (req, res) => {
+app.get('/listarprodutos', (req, res) => {
     res.json(produtos);
 });
+// 1.2 Tarefa 2: Listar um Produto Específico por ID
+app.get('/listarprodutos/:id', (req, res) => {
+    const idProduto = req.params.id; // Pega o ID do produto
+    const produto = produtos.find(produto => produto.id === parseInt(idProduto)); 
+    
+    if (!produto) {
+        res.status(404).send('Produto não encontrado.'); // Retorna 404
+    } else {
+        res.json(produto); // Retorna o produto
+    }
+});
+
+
+
 
 // 1. Tarefa 3: Atualizar Produto
 app.put('/produtos/:id', validarDadosProduto, (req, res) => {
@@ -64,7 +78,7 @@ app.delete("/produtos/:id", (req, res) => {
 
 
 // Função extra: Atualização Parcial (PATCH)
-app.patch("/produtos/:id", validarDadosProduto, (req, res) => {
+app.patch("/produtos/:id", (req, res) => {
     const { id } = req.params;
     const index = produtos.findIndex(produto => produto.id === parseInt(id));
     if (index === -1) {

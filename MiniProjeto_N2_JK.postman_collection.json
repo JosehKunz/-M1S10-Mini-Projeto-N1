@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "7783eae7-c449-4426-bea7-5f7448af3fa2",
+		"name": "MiniProjeto_N2_JK",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "33911785"
+	},
+	"item": [
+		{
+			"name": "postar Manjericão",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"nome\": \"Manjericão\",\r\n        \"preco\":33,\r\n        \"descricao\":\"Texto\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3333/produtos"
+			},
+			"response": []
+		},
+		{
+			"name": "postar Orégano",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"nome\": \"Manjericão\",\r\n        \"preco\":33,\r\n        \"descricao\":\"Texto\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3333/produtos"
+			},
+			"response": []
+		},
+		{
+			"name": "postar Páprica",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"nome\": \"Manjericão\",\r\n        \"preco\":33,\r\n        \"descricao\":\"Texto\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3333/produtos"
+			},
+			"response": []
+		},
+		{
+			"name": "postar Coentro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"nome\": \"Manjericão\",\r\n        \"preco\":33,\r\n        \"descricao\":\"Texto\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3333/produtos"
+			},
+			"response": []
+		},
+		{
+			"name": "postar Alecrim",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"nome\": \"Manjericão\",\r\n        \"preco\":33,\r\n        \"descricao\":\"Texto\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3333/produtos"
+			},
+			"response": []
+		},
+		{
+			"name": "listar produtos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3333/produtos"
+			},
+			"response": []
+		},
+		{
+			"name": "ver produto específico",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3333/produtos"
+			},
+			"response": []
+		},
+		{
+			"name": "promoção Coentro",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"nome\": \"Manjericão\",\r\n        \"preco\":47,\r\n        \"descricao\":\"Uma maravilha para temperar seus alimentos, crescimento rápido\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3333/produtos/1"
+			},
+			"response": []
+		},
+		{
+			"name": "ver promo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3333/produtos"
+			},
+			"response": []
+		},
+		{
+			"name": "ver opcoes",
+			"request": {
+				"method": "OPTIONS",
+				"header": [],
+				"url": "http://localhost:3333/"
+			},
+			"response": []
+		},
+		{
+			"name": "Alterar SEO Coentro",
+			"request": {
+				"method": "OPTIONS",
+				"header": [],
+				"url": "http://localhost:3333/"
+			},
+			"response": []
+		}
+	]
+}
