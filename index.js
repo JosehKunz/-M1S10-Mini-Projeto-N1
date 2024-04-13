@@ -1,5 +1,4 @@
 const express = require("express");
-const Yup = require('yup');
 const app = express();
 const PORT = 3333;
 
@@ -7,11 +6,7 @@ app.use(express.json());
 
 let produtos = []; // Lista de produtos (simulando um "banco de dados" em memória)
 
-const produtoSchema = Yup.object().shape({
-    nome: Yup.string().required(),
-    preco: Yup.number().positive().required(),
-    descricao: Yup.string().notRequired(),
-});
+
 
 // Middleware para validar os dados dos produtos
 function validarDadosProduto(req, res, next) {
@@ -92,6 +87,8 @@ app.patch("/produtos/:id", (req, res) => {
 app.options('*', (req, res) => {
     res.send('GET, POST, PUT, PATCH, DELETE');
 });
+
+
 
 app.listen(PORT, () => {
     console.log(`Servidor rodando em http://localhost:${PORT}`);
